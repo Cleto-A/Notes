@@ -26,7 +26,7 @@ Link-Local Multicast Name Resolution (LLMNR) and NetBIOS Name Service (NBT-NS) a
 
 6. The LLMNR and NBT-NS queries will be sent to all other hosts on the local network asking them to respond if they know the IP of the hostname being queried. Attackers can exploit this and will respond with their own IP address to direct subsequent network traffic for the requested resource to their machine.
 
-![Untitled.png](C:\Users\jonne\Documents\PDF\pdfs\LLMNR%20Poisoning%20MITM%20710337978ef845858bd8ddf37d19c90d\Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/55252902/153492832-0b2dfa74-27b0-4014-9935-51b760cff3e0.png)
 
 ## Step 1: Run Responder | python [Responder.py](http://Responder.py) -l tun0 -rdw
 
@@ -51,16 +51,15 @@ Run responder
 ```
 responder -I eth0 -rdwv
 ```
+![Untitled 1](https://user-images.githubusercontent.com/55252902/153492871-e49f2341-2a71-486b-979c-8b95aa6148fb.png)
 
-![Untitled 1.png](C:\Users\jonne\Documents\PDF\pdfs\LLMNR%20Poisoning%20MITM%20710337978ef845858bd8ddf37d19c90d\Untitled%201.png)
-
-![Untitled 2.png](C:\Users\jonne\Documents\PDF\pdfs\LLMNR%20Poisoning%20MITM%20710337978ef845858bd8ddf37d19c90d\Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/55252902/153492880-706a79ba-2107-4365-9bbb-0259d3a35846.png)
 
 Responder is running and listening
 
-![Untitled 3.png](C:\Users\jonne\Documents\PDF\pdfs\LLMNR%20Poisoning%20MITM%20710337978ef845858bd8ddf37d19c90d\Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/55252902/153492902-10d573d9-ae06-4f1b-8977-f00dba9c7afe.png)
 
-![Untitled 4.png](C:\Users\jonne\Documents\PDF\pdfs\LLMNR%20Poisoning%20MITM%20710337978ef845858bd8ddf37d19c90d\Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/55252902/153492907-790c58e9-3594-4317-b940-bd0ffa3cbb4e.png)
 
 AD DS and workstation both running.
 
@@ -70,7 +69,8 @@ Point workstation to attack machineIP
 \\x.x.x.x
 ```
 
-![Untitled 5.png](C:\Users\jonne\Documents\PDF\pdfs\LLMNR%20Poisoning%20MITM%20710337978ef845858bd8ddf37d19c90d\Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/55252902/153492927-02084418-54d0-4b64-b8eb-7dd5411a49b2.png)
+
 
 Hashes pulled | Take offline and attempt to crack.
 
@@ -84,11 +84,12 @@ Need to find which module to use for hashcat.
 hashcat --help | grep NTLM
 ```
 
-![Untitled 6.png](C:\Users\jonne\Documents\PDF\pdfs\LLMNR%20Poisoning%20MITM%20710337978ef845858bd8ddf37d19c90d\Untitled%206.png)
+![Untitled 6](https://user-images.githubusercontent.com/55252902/153492943-a48248e0-8c4c-4bcd-99fc-4fbc148506a3.png)
 
 I saved this hash in my main OS which has hashcat installed. I have a RTX 2080 so this crack should go pretty fast.
 
-![Untitled 9.png](C:\Users\jonne\Documents\PDF\pdfs\LLMNR%20Poisoning%20MITM%20710337978ef845858bd8ddf37d19c90d\Untitled%209.png)
+![Untitled 9](https://user-images.githubusercontent.com/55252902/153492991-1b81f2a9-9a58-4561-b413-c7c6acc59a0c.png)
+
 
 Change drives and CD to where hashcat is.
 
@@ -96,11 +97,13 @@ Change drives and CD to where hashcat is.
 hashcast-6.2.4>hashcat64.exe -m 5600 ntlmhash.txt rockyou.txt -O
 ```
 
-![Untitled 10.png](C:\Users\jonne\Documents\PDF\pdfs\LLMNR%20Poisoning%20MITM%20710337978ef845858bd8ddf37d19c90d\Untitled%2010.png)
+![Untitled 10](https://user-images.githubusercontent.com/55252902/153493008-db32b6c9-9069-4e8e-9950-900b46034a63.png)
+
 
 - The -O stands for optimize
 
-![InkedUntitled 12_LI.jpg](C:\Users\jonne\Documents\PDF\pdfs\LLMNR%20Poisoning%20MITM%20710337978ef845858bd8ddf37d19c90d\InkedUntitled%2012_LI.jpg)
+![InkedUntitled 12_LI](https://user-images.githubusercontent.com/55252902/153493032-f4274066-221f-40b0-87ef-1a5d620c5082.jpg)
+
 
 H**ashcat has tried every possible password combination in the attack you have provided**, and failed to crack 100% of all hashes given. In other words, hashcat
 has finished doing everything you told it to do – **it has exhausted** its
