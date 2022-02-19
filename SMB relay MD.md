@@ -6,13 +6,15 @@ Instead of cracking hashes gathered with Responder, we can instead relay those h
 
 Packet level protocol | Packets get signed so SMB signing has to be disabled | If SMB signing is off, authenticity is never check.
 
-[https://www.cloudflare.com/learning/network-layer/what-is-a-packet/](What is a packet)
-
 SMB Port 445
 
-[https://infosecwriteups.com/abusing-ntlm-relay-and-pass-the-hash-for-admin-d24d0f12bea0](Pass the hash)
+Sources I've used
 
-[https://blog.fox-it.com/2017/05/09/relaying-credentials-everywhere-with-ntlmrelayx/](ntlmrelayx)
+[What is a packet](https://www.cloudflare.com/learning/network-layer/what-is-a-packet/)
+
+[Pass the hash](https://infosecwriteups.com/abusing-ntlm-relay-and-pass-the-hash-for-admin-d24d0f12bea0)
+
+[ntlmrelayx](https://blog.fox-it.com/2017/05/09/relaying-credentials-everywhere-with-ntlmrelayx/)
 
 ## Requirements
 
