@@ -20,8 +20,6 @@ Any authenticated user account is able to **retrieve and read** GPP objects.
 
 These passwords aren’t stored in plaintext, they are encrypted with an AES-Encryption algorithm. Back in 2012, Microsoft disclosed the AES key.
 
-[AES Key - Microsoft](https://adsecurity.org/?p=2362)
-
 Microsoft doesn’t allow you to use GPP to set passwords anymore. 
 
 Can’t be done in modern domain controllers but can be done in Windows 2012 Server.
