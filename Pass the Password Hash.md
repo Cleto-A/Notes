@@ -8,7 +8,7 @@ Be careful password spraying on domain accounts. If there are a lot of machines 
 
 **Local accounts don’t have the same lockout policies as domain accounts do. It may be better to password spray on local accounts than domain accounts.**
 
-[https://github.com/byt3bl33d3r/CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec)
+[CrackMapExec GitHub](https://github.com/byt3bl33d3r/CrackMapExec)
 
 ```bash
 crackmapexec <ip/CIDR> -u <user> -d <domain> -p <password>
@@ -30,4 +30,4 @@ Use psexec or similar tools to authenticate as other users.
 psexec.py <domainname/user>:<password>@<other-user-ip> 
 ```
 
-### Metasploit windows/smb/psexec and meterpreter
+### Can also use Metasploit windows/smb/psexec and meterpreter
