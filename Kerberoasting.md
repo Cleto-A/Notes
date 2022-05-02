@@ -2,7 +2,6 @@
 
 # SPN - Service Principal Names
 
-[Service Accounts (SPN)](Kerberoasting%20f96b27d162554eae8993a450b617671e/Service%20Accounts%20(SPN)%2066fb82ecfb79480aa852482e3147d6f5.md)
 
 SPNs are used by Kerberos authentication to **associate service instances with a service logon account.** SPN acts as a pointer to that domain account that is running a service. When something wants to request access to that service, it doesn’t need to know the actual domain account that is running that service. **That something just wants access to service X on machine Y.**
 
