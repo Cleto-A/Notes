@@ -15,7 +15,8 @@ If something were to request access to this example service...
 - Apart of this domain - @domain.local
 - Something requesting access to this service doesn’t need to know the name of this account, it just wants access to a particular service.
 
-![Untitled](Kerberoasting%20f96b27d162554eae8993a450b617671e/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/55252902/166307364-0a2860ad-9969-487b-85f9-16b6f62c6275.png)
+
 
 ## Requirements to perform Kerberoasting
 
@@ -47,10 +48,12 @@ This command will perform that kerberos authentication process and attempt to ge
 
 This hash can now be taken offline and potentially cracked.
 
-![Untitled](Kerberoasting%20f96b27d162554eae8993a450b617671e/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/55252902/166307376-1bee41f2-afd5-46f1-a9ef-0b64f73bf5cf.png)
 
 ## Mitigations
 
 - Long and complex passwords for all accounts but especially for accounts that have SPNs tied to them. Rotate them twice.
 - Rotated/change passwords
 - Service accounts have the least amount of privilege. Do not put these accounts into groups they don’t need to be (Domain Admin).
+
+## Sources
