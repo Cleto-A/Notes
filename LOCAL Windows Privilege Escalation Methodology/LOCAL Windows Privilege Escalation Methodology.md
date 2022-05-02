@@ -1,10 +1,12 @@
 # LOCAL Windows Privilege Escalation Methodology
 
-![Untitled](LOCAL%20Windows%20Privilege%20Escalation%20Methodology%2060becff2e9374886a77fca535141b80d/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/55252902/166310292-92f18b4c-40f1-41fa-b1d2-896f1c713160.png)
+
 
 ## Credential Access
 
-![Untitled](LOCAL%20Windows%20Privilege%20Escalation%20Methodology%2060becff2e9374886a77fca535141b80d/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/55252902/166310305-7dac0b65-9e91-4b1a-b603-f522c15c521b.png)
+
 
 - Reused Passwords - Already have credentials? Check to see if the administrator is lazy and is reusing passwords.
 - Credentials from Configuration Files - Any services that are running, check the configuration files that can be read and see if there are any credentials there.
@@ -17,7 +19,8 @@
 
 ## Exploit
 
-![Untitled](LOCAL%20Windows%20Privilege%20Escalation%20Methodology%2060becff2e9374886a77fca535141b80d/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/55252902/166310326-7dd1e02b-0691-4919-9d99-146e0e789da5.png)
+
 
 - Services Running on [Localhost](http://Localhost) - Look at services that are running and the versions of them.
 - Kernel Version - Check for kernel exploits.
@@ -25,14 +28,15 @@
 
 ## Misconfigurations
 
-![Untitled](LOCAL%20Windows%20Privilege%20Escalation%20Methodology%2060becff2e9374886a77fca535141b80d/Untitled%203.png)
+![Untitled 3](https://user-images.githubusercontent.com/55252902/166310351-e18a7f59-45f8-4560-8828-e0d5b0b96ca8.png)
+
 
 ## Sources
 
-[https://c0nd4.medium.com/oscp-privilege-escalation-guide-4b3623f57d71](https://c0nd4.medium.com/oscp-privilege-escalation-guide-4b3623f57d71)
+[Conda OSCP Privilege Escalation Guide](https://c0nd4.medium.com/oscp-privilege-escalation-guide-4b3623f57d71)
 
 [https://www.fuzzysecurity.com/tutorials/16.html](https://www.fuzzysecurity.com/tutorials/16.html)
 
-[https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology and Resources/Windows - Privilege Escalation.md](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
+[PayLoadsAllTheThing Windows - GitHuB](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
 
-[https://github.com/PowerShellMafia/PowerSploit/blob/master/Privesc/PowerUp.ps1](https://github.com/PowerShellMafia/PowerSploit/blob/master/Privesc/PowerUp.ps1)
+[PowerSploit - GitHub](https://github.com/PowerShellMafia/PowerSploit/blob/master/Privesc/PowerUp.ps1)
