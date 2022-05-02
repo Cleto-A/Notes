@@ -1,8 +1,9 @@
 # AS-REP Roasting
 
-[https://www.qomplx.com/qomplx-knowledge-what-is-as-rep-roasting/](https://www.qomplx.com/qomplx-knowledge-what-is-as-rep-roasting/)
+[What is AS-REP roasting.](https://www.qomplx.com/qomplx-knowledge-what-is-as-rep-roasting/)
 
-![Untitled](AS-REP%20Roasting%206bc49642bf014b02adce1956cda5e573/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/55252902/166306824-38d36fba-0f2d-45f3-8768-be5054c87733.png)
+
 
 - Client sends a request for a TGT (Ticket Granting Ticket) to the KDC (Key Distribution Center).
 - In that request, **the client is going to be sending an encrypted timestamp along with the request**. That timestamp is encrypted with the users password. KDC receives that request and decrypts it with the users password. **This verifies the person initiating the AS_REP request is the actual user and verifies that the client is not doing a replay attack.**
@@ -12,7 +13,8 @@
 
 ## Requirements
 
-![Untitled](AS-REP%20Roasting%206bc49642bf014b02adce1956cda5e573/Untitled%201.png)
+![Untitled 1](https://user-images.githubusercontent.com/55252902/166306851-3ad24f4c-9ab2-4ce6-ad53-0c52e66a9e69.png)
+
 
 - Kerberos-Pre-Auth needs to be disabled / Do not require Kerberos preauthentication.
 - We don’t need to send an encrypted timestamp, the KDC won’t have to verify with a timestamp. We don’t need to know the users password.
@@ -30,7 +32,8 @@ GetNPUsers <domainname.local/filecontainingusernames.txt -dc-ip= <domain-ip>
 
 - Once executed it will send that KRB_AS_REQ.
 
-![Untitled](AS-REP%20Roasting%206bc49642bf014b02adce1956cda5e573/Untitled%202.png)
+![Untitled 2](https://user-images.githubusercontent.com/55252902/166306864-44c6a9ae-358e-4e08-af99-fa31fa0a1416.png)
+
 
 Bruteforce the hash offline with hashcat or john. 
 
@@ -41,3 +44,7 @@ Once you have the password you can RDP, use evil-winRM, etc... into the machine
 - Enforce robust password policies for service accounts - Mandate long and complicated passwords **< 25 characters**. Make these passwords changed frequently, Ex: 30-day intervals, narrows the window of time attackers have to crack long hashes.
 - Kerberos Monitoring - Technology such as Qomplx’s monitors for telltale signs of AS-REP roasting attacks, such as AS-REQ and AS-REP events in conjunction with unusual combinations of events like 4768 (TGT requested) followed by an invalid password credential (4625).
 - Deploy Honey Accounts  - **As with Kerberoasting, detection of AS-REP roasting attacks requires logging and monitoring of activity.** One way to make sure such activity gets noticed is with the use of so-called “honey accounts,” which work in a similar fashion to network honeypots: enticing advanced attackers doing reconnaissance through Active Directory with believable sounding service names. **Once compromised, however, these accounts do nothing but trigger an alert if they are used to login or generate a service ticket request.**
+
+## Sources
+
+[Conda- AS-REP Roasting](https://www.youtube.com/watch?v=EVdwnBFtUtQ&t=32s)
