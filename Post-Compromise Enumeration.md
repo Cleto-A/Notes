@@ -27,3 +27,4 @@ Bypass execution policy so we can execute scripts.
 
 1. Nothing will be shown after pressing enter, but powerview is loaded.
 - Get-UserProperty  -Properties logoncount - If last logoncount is 0, potentially that account could be a honeypot
+- Tons of commands that can be run to further enumerate, go through cheatsheet to view them.
