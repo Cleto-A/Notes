@@ -1,6 +1,6 @@
 # GPP- Credentials | Lateral Movement and Privilege Escalation
 
-[https://github.com/PowerShellMafia/PowerSploit](https://github.com/PowerShellMafia/PowerSploit)
+[PowerSploit - GitHub](https://github.com/PowerShellMafia/PowerSploit)
 
 ## Hunting for passwords by GPP (Group Policy Preferences).
 
@@ -20,7 +20,7 @@ Any authenticated user account is able to **retrieve and read** GPP objects.
 
 These passwords aren’t stored in plaintext, they are encrypted with an AES-Encryption algorithm. Back in 2012, Microsoft disclosed the AES key.
 
-[https://adsecurity.org/?p=2362](https://adsecurity.org/?p=2362)
+[AES Key - Microsoft](https://adsecurity.org/?p=2362)
 
 Microsoft doesn’t allow you to use GPP to set passwords anymore. 
 
