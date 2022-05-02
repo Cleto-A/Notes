@@ -11,7 +11,7 @@
 - If scans are taking too long, look (sweep) for websites that are within scope (module metasploit: http_version). This is less likely to be picked up because traffic is being made on 80/443, which is very common traffic vs port scanning devices on a network that can be picked up by a SIEM.
 - Look for default credentials on web logins
     - Printers - Scan to computer feature - Sometimes a Admin will make a user who can scan from a printer to a computer via SMB a Domain Admin. Either that user is a SMB user or they’re using an individual account.
-    - Jenkins - Check for web logins for developer pages, enumerate further.
+    - CD/CD (Dev) - Check for web logins for developer pages, enumerate further.
     - Etc
 - Think outside the box
 
