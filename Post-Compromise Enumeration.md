@@ -4,7 +4,7 @@
 
 [Powerview GitHub](https://github.com/PowerShellMafia/PowerSploit/blob/master/PowerSploit.psd1)
 
-[Powerview cheatsheet](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993)  - Powerview cheatsheet
+[Powerview cheatsheet](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993) 
 
 This script is ran directly on a user machine or remotely from yours - this tool is for enumeration.
 
