@@ -56,3 +56,4 @@ This hash can now be taken offline and potentially cracked.
 - Service accounts have the least amount of privilege. Do not put these accounts into groups they don’t need to be (Domain Admin).
 
 ## Sources
+[How to prevent kerberoasting attacks](https://www.lepide.com/blog/how-to-prevent-kerberoasting-attacks/)
