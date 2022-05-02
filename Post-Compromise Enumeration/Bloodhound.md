@@ -1,6 +1,6 @@
 # Bloodhound
 
-[https://github.com/BloodHoundAD/BloodHound](https://github.com/BloodHoundAD/BloodHound)
+[BloodHound - GitHub](https://github.com/BloodHoundAD/BloodHound)
 
 Bloodhound is a tool that will make this process quick and will provide queriable graphs that allow for an easy discovery process. This tool is commonly used during pentesting engagement.
 
@@ -8,7 +8,7 @@ A lot of queries are being run on the domain with this tool so it is not a very 
 
 Bloodhound will save what it found into a zip or json files. You can import these to your neo4j database.
 
-![Untitled](Bloodhound%20f824389592304db99e91902d158d486c/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/55252902/166313232-64b0c69f-90fc-4914-8843-3782f1c77f7a.png)
 
 These are the inbuilt queries that bloodhound has.
 
