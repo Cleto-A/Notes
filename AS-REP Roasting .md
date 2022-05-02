@@ -1,6 +1,5 @@
 # AS-REP Roasting
 
-[What is AS-REP roasting.](https://www.qomplx.com/qomplx-knowledge-what-is-as-rep-roasting/)
 
 ![Untitled](https://user-images.githubusercontent.com/55252902/166306824-38d36fba-0f2d-45f3-8768-be5054c87733.png)
 
@@ -48,3 +47,4 @@ Once you have the password you can RDP, use evil-winRM, etc... into the machine
 ## Sources
 
 [Conda- AS-REP Roasting](https://www.youtube.com/watch?v=EVdwnBFtUtQ&t=32s)
+[What is AS-REP roasting.](https://www.qomplx.com/qomplx-knowledge-what-is-as-rep-roasting/)
