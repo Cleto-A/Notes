@@ -14,3 +14,8 @@
     - Jenkins - Check for web logins for developer pages, enumerate further.
     - Etc
 - Think outside the box
+
+## Sources
+[AD - Attack/Defense - GitHub](https://github.com/infosecn1nja/AD-Attack-Defense#discovery)
+
+[Hacktrickz AD Methodology](https://book.hacktricks.xyz/windows-hardening/active-directory-methodology)
