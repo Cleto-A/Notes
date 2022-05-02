@@ -35,7 +35,7 @@
 
 [Conda OSCP Privilege Escalation Guide](https://c0nd4.medium.com/oscp-privilege-escalation-guide-4b3623f57d71)
 
-[https://www.fuzzysecurity.com/tutorials/16.html](https://www.fuzzysecurity.com/tutorials/16.html)
+[fuzzysecurity Windows Privilege Escalation](https://www.fuzzysecurity.com/tutorials/16.html)
 
 [PayLoadsAllTheThing Windows - GitHuB](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
 
